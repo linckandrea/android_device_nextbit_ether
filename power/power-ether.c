@@ -244,8 +244,7 @@ int set_interactive_override(__attribute__((unused)) struct power_module *module
         /* Display off */
         if ((strncmp(governor, INTERACTIVE_GOVERNOR, strlen(INTERACTIVE_GOVERNOR)) == 0) &&
             (strlen(governor) == strlen(INTERACTIVE_GOVERNOR))) {
-            // Offline all big cores
-            int resource_values[] = {0x777};
++            int resource_values[] = {0x41004000, 0x0}; /* 4+0 core config in display off */
             perform_hint_action(DISPLAY_STATE_HINT_ID,
                     resource_values, ARRAY_SIZE(resource_values));
             return HINT_HANDLED;
