@@ -100,15 +100,7 @@ write /sys/devices/system/cpu/cpu5/online 1
 write /sys/module/msm_performance/parameters/cpu_max_freq "4:4294967295 5:4294967295"
 
 # Configure core_ctl
-write /sys/devices/system/cpu/cpu4/core_ctl/max_cpus 2
-write /sys/devices/system/cpu/cpu4/core_ctl/min_cpus 0
-write /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres 60
-write /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres 30
-write /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms 100
-write /sys/devices/system/cpu/cpu4/core_ctl/is_big_cluster 1
-write /sys/devices/system/cpu/cpu4/core_ctl/task_thres 2
-chown system:system /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
-chown system:system /sys/devices/system/cpu/cpu4/core_ctl/max_cpus
+write /sys/module/msm_thermal/core_control/enabled 0
 
 # Setting B.L scheduler parameters
 write /proc/sys/kernel/sched_migration_fixup 1
