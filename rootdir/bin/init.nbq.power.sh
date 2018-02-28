@@ -88,7 +88,7 @@ write /sys/devices/system/cpu/cpu4/cpufreq/interactive/target_loads "70 960000:8
 write /sys/devices/system/cpu/cpu4/cpufreq/interactive/min_sample_time 39000
 write /sys/devices/system/cpu/cpu4/cpufreq/interactive/max_freq_hysteresis 79000
 write /sys/devices/system/cpu/cpu4/cpufreq/interactive/ignore_hispeed_on_notif 1
-write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 633600
+write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 384000
 
 # restore A57's max
 copy /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_max_freq /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
@@ -101,6 +101,7 @@ write /sys/module/msm_performance/parameters/cpu_max_freq "4:4294967295 5:429496
 
 # Configure core_ctl
 write /sys/module/msm_thermal/core_control/enabled 0
+write /sys/module/msm_thermal/parameters/enabled 1
 
 # Setting B.L scheduler parameters
 write /proc/sys/kernel/sched_migration_fixup 1

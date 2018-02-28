@@ -145,3 +145,13 @@ service energy-awareness /system/bin/energy-awareness
     user root
     group system
     oneshot
+
+on property:sys.boot_completed=1
+    # TheCrazyLex@PA Setup Shadow scheduling
+    write /proc/sys/kernel/sched_use_shadow_scheduling 1
+    write /proc/sys/kernel/sched_shadow_downmigrate 10
+    write /proc/sys/kernel/sched_shadow_upmigrate 20
+
+    # Disable core control, enable msm_thermal
+    write /sys/module/msm_thermal/core_control/enabled 0
+    write /sys/module/msm_thermal/parameters/enabled 1

@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_kernel_nextbit_msm8992",
+    "repository": "Pop-kernel-ether-LOS14.1",
     "target_path": "kernel/nextbit/msm8992"
   },
   {
