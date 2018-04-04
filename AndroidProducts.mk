@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES += \
     $(LOCAL_DIR)/lineage_ether.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_ether-user \
+    lineage_etheruserdebug \
+    lineage_ether-eng
