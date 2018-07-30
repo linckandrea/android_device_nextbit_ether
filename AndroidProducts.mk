@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-$(LOCAL_DIR)/aosp_ether.mk
+$(LOCAL_DIR)/ether.mk

@@ -1,1 +1,1 @@
-add_lunch_combo aosp_ether-userdebug
+add_lunch_combo ether-userdebug
