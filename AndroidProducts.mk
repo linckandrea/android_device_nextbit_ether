@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    device/nextbit/ether/omni_ether.mk
+    device/nextbit/ether/ether.mk
 

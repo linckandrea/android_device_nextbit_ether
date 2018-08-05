@@ -8,15 +8,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit some common omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/nexus/config/common.mk)
 
 # Inherit APNs list
-$(call inherit-product, vendor/omni/config/gsm.mk)
+PRODUCT_COPY_FILES := device/nexbit/ether/apns-full-conf.xml:system/etc/apns-conf.xml
 
 # Inherit device configuration
 $(call inherit-product, device/nextbit/ether/device.mk)
-
-PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := omni_ether

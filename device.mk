@@ -71,7 +71,7 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    omni_charger_res_images
+    charger_res_images
 
 # Display
 PRODUCT_PACKAGES += \
@@ -291,10 +291,10 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0
 
 # setup dalvik vm configs.
-$(call inherit-product, vendor/omni/config/phone-xxxhdpi-3072-dalvik-heap.mk)
+$(call inherit-product, vendor/nexus/config/phone-xxxhdpi-3072-dalvik-heap.mk)
 
 # setup base hwui configs
-$(call inherit-product, vendor/omni/config/phone-xxxhdpi-3072-hwui-memory.mk)
+$(call inherit-product, vendor/nexus/config/phone-xxxhdpi-3072-hwui-memory.mk)
 
 # Call the proprietary setup
 $(call inherit-product, vendor/nextbit/ether/device-vendor.mk)

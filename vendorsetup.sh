@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_ether-userdebug
+add_lunch_combo ether-userdebug
 
