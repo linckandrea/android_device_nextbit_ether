@@ -157,7 +157,7 @@ TARGET_RIL_VARIANT := caf
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
-include device/qcom/sepolicy/legacy-sepolicy.mk
+include vendor/nexus/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy
 
