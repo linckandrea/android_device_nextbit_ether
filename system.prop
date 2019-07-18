@@ -87,6 +87,8 @@ ro.qc.sdk.izat.service_mask=0x0
 ro.oem_unlock_supported=1
 
 # Media
+debug.stagefright.omx_default_rank.sw-audio=1
+debug.stagefright.omx_default_rank=0
 mm.enable.smoothstreaming=true
 media.aac_51_output_enabled=true
 vidc.debug.level=1
