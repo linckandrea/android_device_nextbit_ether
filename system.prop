@@ -50,7 +50,7 @@ persist.cne.feature=1
 persist.vendor.dpm.feature=11
 
 # Dalvik heap
-dalvik.vm.heapstartsize=8m
+dalvik.vm.heapstartsize=16m
 dalvik.vm.heapgrowthlimit=288m
 dalvik.vm.heapsize=768m
 dalvik.vm.heaptargetutilization=0.75
@@ -113,6 +113,9 @@ persist.radio.sib16_support=1
 ro.data.large_tcp_window_size=true
 ro.telephony.call_ring.multiple=false
 ro.telephony.default_network=9
+
+# Memory optimizations
+ro.vendor.qti.sys.fw.bservice_enable=true
 
 # WiFi
 wifi.interface=wlan0
