@@ -22,10 +22,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 DEVICE_PACKAGE_OVERLAYS := \
     $(LOCAL_PATH)/overlay
 
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/lineage-sdk
-
 # APEX
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ld.config.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/swcodec/ld.config.txt
