@@ -19,5 +19,5 @@ PRODUCT_MAKEFILES += \
 
 COMMON_LUNCH_CHOICES := \
     lineage_ether-user \
-    lineage_etheruserdebug \
+    lineage_ether-userdebug \
     lineage_ether-eng
