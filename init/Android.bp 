@@ -18,8 +18,11 @@ cc_library_static {
     name: "libinit_ether",
     recovery_available: true,
     srcs: ["init_ether.cpp"],
+   cflags: ["-Wall"],
     include_dirs: [
         "system/core/base/include",
-        "system/core/init"
-    ]
+        "system/core/init",
+        "device/motorola/victara/init",
+    ],
+    static_libs: ["libbase"]
 }

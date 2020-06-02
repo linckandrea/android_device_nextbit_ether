@@ -31,7 +31,7 @@
 
 #include <android-base/file.h>
 #include <android-base/properties.h>
-#include <android-base/strings.h>
+#include <android-base/logging.h>
 
 #include "property_service.h"
 #include "vendor_init.h"
